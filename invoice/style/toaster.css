@@ -1,0 +1,298 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap);
+
+
+
+:root {
+
+    --dark: #34495e;
+
+    --light: #ffffff;
+
+    --success: #0abf30;
+
+    --error: #e24d4c;
+
+    --warning: #e9bd0c;
+
+    --info: #3498db;
+
+}
+
+
+
+.design_notifications_toaster {
+    margin:0;
+    padding: 0;
+    
+    position: fixed;
+
+    bottom: 30px;
+
+    right: 20px;
+
+        z-index: 99999999999999999999;
+
+}
+
+.design_notifications_toaster :where(.toast, .column) {
+
+    display: flex !important;
+
+    align-items: center;
+
+}
+
+.design_notifications_toaster .toast {
+
+    width: 400px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    list-style: none;
+
+    border-radius: 4px;
+
+    padding: 16px 17px;
+
+    margin-bottom: 10px;
+
+    background: var(--light);
+
+    justify-content: space-between;
+
+    animation: 0.3s forwards show_toast;
+
+}
+
+@keyframes show_toast {
+
+    0% {
+
+        transform: translateX(100%);
+
+    }
+
+    40% {
+
+        transform: translateX(-5%);
+
+    }
+
+    80% {
+
+        transform: translateX(0);
+
+    }
+
+    100% {
+
+        transform: translateX(-10px);
+
+    }
+
+}
+
+.design_notifications_toaster .toast.hide {
+
+    animation: 0.3s forwards hide_toast;
+
+}
+
+@keyframes hide_toast {
+
+    0% {
+
+        transform: translateX(-10px);
+
+    }
+
+    40% {
+
+        transform: translateX(0);
+
+    }
+
+    80% {
+
+        transform: translateX(-5%);
+
+    }
+
+    100% {
+
+        transform: translateX(calc(100% + 20px));
+
+    }
+
+}
+
+.toast::before {
+
+    position: absolute;
+
+    content: "";
+
+    height: 3px;
+
+    width: 100%;
+
+    bottom: 0;
+
+    left: 0;
+
+    animation: 5s linear forwards progress;
+
+}
+
+@keyframes progress {
+
+    100% {
+
+        width: 0%;
+
+    }
+
+}
+
+.btn#success,
+
+.toast.success::before {
+
+    background: var(--success);
+
+}
+
+.btn#error,
+
+.toast.error::before {
+
+    background: var(--error);
+
+}
+
+.btn#warning,
+
+.toast.warning::before {
+
+    background: var(--warning);
+
+}
+
+.btn#info,
+
+.toast.info::before {
+
+    background: var(--info);
+
+}
+
+.toast .column i {
+
+    font-size: 1.75rem;
+
+}
+
+.toast.success .column i {
+
+    color: var(--success);
+
+}
+
+.toast.error .column i {
+
+    color: var(--error);
+
+}
+
+.toast.warning .column i {
+
+    color: var(--warning);
+
+}
+
+.toast.info .column i {
+
+    color: var(--info);
+
+}
+
+.toast .column span {
+
+    font-size: 1rem;
+
+    margin-left: 12px;
+
+}
+
+.toast i:last-child {
+
+    color: #aeb0d7;
+
+    cursor: pointer;
+
+}
+
+.toast i:last-child:hover {
+
+    color: var(--dark);
+
+}
+
+.buttons .btn {
+
+    border: none;
+
+    outline: 0;
+
+    cursor: pointer;
+
+    margin: 0 5px;
+
+    color: var(--light);
+
+    font-size: 1.2rem;
+
+    padding: 10px 20px;
+
+    border-radius: 4px;
+
+}
+
+@media screen and (max-width: 530px) {
+
+    .design_notifications_toaster {
+
+        width: 95%;
+
+    }
+
+    .design_notifications_toaster .toast {
+
+        width: 100%;
+
+        font-size: 1rem;
+
+        margin-left: 20px;
+
+    }
+
+    .buttons .btn {
+
+        margin: 0 1px;
+
+        font-size: 1.1rem;
+
+        padding: 8px 15px;
+
+    }
+
+}
+
+
+
+.design_notifications_toaster .toast{
+    opacity: 1 !important;
+}

@@ -1,0 +1,106 @@
+[27-Apr-2026 20:14:43 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 27
+[27-Apr-2026 20:14:43 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 27
+[27-Apr-2026 20:14:43 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 45
+[27-Apr-2026 20:14:43 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 46
+[27-Apr-2026 20:14:43 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 46
+[27-Apr-2026 20:14:43 UTC] PHP Warning:  Undefined array key "" in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 46
+[27-Apr-2026 20:14:43 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 54
+[27-Apr-2026 20:14:43 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 55
+[27-Apr-2026 20:14:43 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 56
+[27-Apr-2026 20:14:43 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 77
+[27-Apr-2026 20:14:43 UTC] PHP Warning:  Undefined array key "created_at" in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 88
+[27-Apr-2026 20:14:43 UTC] PHP Warning:  Undefined array key "invoice_id" in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 90
+[27-Apr-2026 20:14:43 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 92
+[27-Apr-2026 20:14:43 UTC] PHP Warning:  Undefined array key "name" in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 94
+[27-Apr-2026 20:14:43 UTC] PHP Warning:  Undefined array key "payment_notes" in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 103
+[27-Apr-2026 20:14:43 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 104
+[27-Apr-2026 20:14:43 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 104
+[27-Apr-2026 20:14:43 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 118
+[27-Apr-2026 20:14:43 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 118
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Undefined variable $cxmMerchantArr in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 34
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 34
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 34
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Undefined variable $cxmMerchantArr in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 45
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 45
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Undefined variable $cxmMerchantArr in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 46
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 46
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 46
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Undefined array key "" in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 46
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 54
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 55
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 56
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 77
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Undefined variable $cxm_merchants in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 88
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 88
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Undefined variable $cxm_merchants in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 90
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 90
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 92
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Undefined variable $cxm_merchants in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 94
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 94
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Undefined variable $cxm_merchants in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 103
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 103
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Undefined variable $cxmMerchantArr in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 104
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 104
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 104
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Undefined variable $cxmMerchantArr in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 118
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 118
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 118
+[29-Apr-2026 07:14:07 UTC] PHP Warning:  Undefined array key "invoicekey" in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 131
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Undefined variable $cxmMerchantArr in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 34
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 34
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 34
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Undefined variable $cxmMerchantArr in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 45
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 45
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Undefined variable $cxmMerchantArr in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 46
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 46
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 46
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Undefined array key "" in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 46
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 54
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 55
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 56
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 77
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Undefined variable $cxm_merchants in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 88
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 88
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Undefined variable $cxm_merchants in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 90
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 90
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 92
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Undefined variable $cxm_merchants in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 94
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 94
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Undefined variable $cxm_merchants in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 103
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 103
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Undefined variable $cxmMerchantArr in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 104
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 104
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 104
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Undefined variable $cxmMerchantArr in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 118
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 118
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 118
+[29-Apr-2026 07:15:10 UTC] PHP Warning:  Undefined array key "invoicekey" in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 131
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Undefined variable $cxmMerchantArr in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 34
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 34
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 34
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Undefined variable $cxmMerchantArr in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 45
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 45
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Undefined variable $cxmMerchantArr in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 46
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 46
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 46
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Undefined array key "" in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 46
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 54
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 55
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 56
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 77
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Undefined variable $cxm_merchants in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 88
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 88
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Undefined variable $cxm_merchants in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 90
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 90
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 92
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Undefined variable $cxm_merchants in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 94
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 94
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Undefined variable $cxm_merchants in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 103
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 103
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Undefined variable $cxmMerchantArr in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 104
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 104
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 104
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Undefined variable $cxmMerchantArr in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 118
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 118
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 118
+[29-Apr-2026 07:16:12 UTC] PHP Warning:  Undefined array key "invoicekey" in /home/americanclassicw/checkout.americanclassicwriters.com/invoice/index.php on line 131

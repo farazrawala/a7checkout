@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stripe Payment</title>
+
+    <!-- Stripe JS -->
+    <script src="https://js.stripe.com/v3/"></script>
+
+    <!-- CSRF (Laravel example – optional) -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6fb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .payment-box {
+            background: #fff;
+            padding: 25px;
+            width: 350px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,.1);
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 12px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        #card-element {
+            padding: 10px;
+        }
+
+        button {
+            width: 100%;
+            background: rgb(255,120,16);
+            color: #fff;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            opacity: 0.6;
+        }
+
+        #card-errors {
+            color: red;
+            font-size: 14px;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="payment-box">
+    <h3>Pay $24.00</h3>
+
+    <form id="payment-form">
+        <input type="text" id="cardHolderName" placeholder="Name on Card" required>
+        <input type="email" id="email" placeholder="Email" required>
+
+        <div style="border:1px solid #ddd;border-radius:5px;margin-bottom:12px;">
+            <div id="card-element"></div>
+        </div>
+
+        <input type="hidden" id="leadId" value="788">
+        <input type="hidden" id="amount" value="2400">
+
+        <div style="margin-bottom:12px">
+            <input type="checkbox" id="terms" required>
+            <label for="terms" style="font-size:13px">
+                I agree to the <a href="/privacy-policy">Privacy Policy</a> &
+                <a href="/terms-condition">Terms</a>
+            </label>
+        </div>
+
+        <button id="submit">Proceed</button>
+        <div id="card-errors"></div>
+    </form>
+</div>
+
+<script>
+    const stripe = Stripe('pk_test_51OjBBrHSre3udbF2dIckqOuvPvo7525Xbt61hZo2xBrZd8QAoIUE7BnBkOK3sAhlr8EgbNHQQYLYh8uNtashvBcR004bQHue19');
+    const elements = stripe.elements();
+
+    const card = elements.create('card', {
+        hidePostalCode: true
+    });
+    card.mount('#card-element');
+
+    const form = document.getElementById('payment-form');
+    const submitBtn = document.getElementById('submit');
+
+    // Display card errors
+    card.on('change', function(event) {
+        const displayError = document.getElementById('card-errors');
+        if (event.error) {
+            displayError.textContent = event.error.message;
+            displayError.style.color = 'red';
+        } else {
+            displayError.textContent = '';
+        }
+    });
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        // Get form values
+        const cardHolderName = document.getElementById('cardHolderName').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const terms = document.getElementById('terms').checked;
+        const amount = parseInt(document.getElementById('amount').value);
+        const leadId = document.getElementById('leadId').value;
+        const cardErrors = document.getElementById('card-errors');
+
+        // Validate form
+        if (!cardHolderName) {
+            cardErrors.textContent = 'Please enter the name on card.';
+            cardErrors.style.color = 'red';
+            return;
+        }
+
+        if (!email) {
+            cardErrors.textContent = 'Please enter your email address.';
+            cardErrors.style.color = 'red';
+            return;
+        }
+
+        // Validate email format
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            cardErrors.textContent = 'Please enter a valid email address.';
+            cardErrors.style.color = 'red';
+            return;
+        }
+
+        if (!terms) {
+            cardErrors.textContent = 'Please agree to the Privacy Policy and Terms.';
+            cardErrors.style.color = 'red';
+            return;
+        }
+
+        if (!amount || amount <= 0 || isNaN(amount)) {
+            cardErrors.textContent = 'Invalid payment amount.';
+            cardErrors.style.color = 'red';
+            return;
+        }
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Processing...';
+        cardErrors.textContent = '';
+        cardErrors.style.color = 'red';
+
+        try {
+            const response = await fetch('stripe_process.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    amount: amount,
+                    leadId: leadId,
+                    name: cardHolderName,
+                    email: email
+                })
+            });
+
+            // Check if response is OK
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            // Parse JSON response
+            let data;
+            try {
+                data = await response.json();
+            } catch (parseError) {
+                throw new Error('Invalid response from server. Please try again.');
+            }
+
+            // Check for errors in response
+            if (data.error) {
+                throw new Error(data.error);
+            }
+
+            if (!data.clientSecret) {
+                throw new Error('Invalid response from server');
+            }
+
+            const { paymentIntent, error } = await stripe.confirmCardPayment(
+                data.clientSecret,
+                {
+                    payment_method: {
+                        card: card,
+                        billing_details: {
+                            name: cardHolderName,
+                            email: email
+                        }
+                    }
+                }
+            );
+
+            if (error) {
+                cardErrors.textContent = error.message;
+                cardErrors.style.color = 'red';
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Proceed';
+                return;
+            }
+
+            if (paymentIntent.status === 'succeeded') {
+                cardErrors.textContent = 'Payment successful! Redirecting...';
+                cardErrors.style.color = 'green';
+                setTimeout(() => {
+                    window.location.href = '/checkout/788';
+                }, 1500);
+            } else if (paymentIntent.status === 'processing') {
+                cardErrors.textContent = 'Your payment is being processed. Please wait...';
+                cardErrors.style.color = 'blue';
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Proceed';
+            } else if (paymentIntent.status === 'requires_action') {
+                cardErrors.textContent = 'Additional authentication required. Please complete the verification.';
+                cardErrors.style.color = 'orange';
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Proceed';
+            } else {
+                cardErrors.textContent = 'Payment was not completed. Status: ' + paymentIntent.status;
+                cardErrors.style.color = 'red';
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Proceed';
+            }
+
+        } catch (error) {
+            console.error('Payment error:', error);
+            cardErrors.textContent = error.message || 'An error occurred. Please try again.';
+            cardErrors.style.color = 'red';
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Proceed';
+        }
+    });
+</script>
+
+</body>
+</html>
