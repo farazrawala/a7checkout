@@ -1,0 +1,22 @@
+name: Deploy to cPanel via FTP
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  web-deploy:
+    runs-on: ubuntu-latest
+    name: deploy
+    steps:
+        - name: Get latest code
+          uses: actions/checkout@v2.3.2
+
+        - name: Sync file
+          uses: SamKirkland/FTP-Deploy-Action@4.3.3 
+          with:
+            server: 69.48.152.51
+            username: dev@checkout.oxfordwritersclub.com
+            password: ddYXC)!JV#ie8TOe
+              
+  
