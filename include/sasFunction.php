@@ -106,8 +106,8 @@ function cxmDecrypt($string, $key)
 $sasPrivateKey = "sas";
 
 if ($_SERVER['REMOTE_ADDR'] == '::1') 
-    $apiBaseUrl = "https://crm.trivexlabs.com/api";
+    $apiBaseUrl = "https://zekesix.com/api";
 else 
-    $apiBaseUrl = "https://crm.trivexlabs.com/api";
+    $apiBaseUrl = "https://zekesix.com/api";
 
 ?>
